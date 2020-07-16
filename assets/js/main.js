@@ -1,9 +1,24 @@
-$('.quotes').slick({
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    speed: 800,
-    slidesToShow: 1,
-    adaptiveHeight: true
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoWidth: true,
+        items: 3,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 4,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: true,
+
+            }
+        }
+    });
 });

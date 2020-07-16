@@ -12,11 +12,13 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
     rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- CAROUSEL -->
-  <link rel="stylesheet" href="./assets/css/owl.carousel.css" />
-  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./assets/css/owl.theme.default.css" />
-  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+
   <title>Hello, world!</title>
 
   <!-- icon -->
@@ -24,43 +26,54 @@
 </head>
 
 <body>
-  <!-- ***** Header Area Start ***** -->
-  <div class="header">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li style="float: right;"><a class="active" href="#about">About</a></li>
-    </ul>
-  </div>
-  <!-- ***** Header Area End ***** -->
+  <!--  Navigation Start  -->
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="./assets/img/apple-icon.png" style="height: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active mr-3" href="#welcome">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link mr-3" href="#about">Features</a>
+        <a class="nav-item nav-link mr-3" href="#testimonial">Testimonial</a>
+        <a class="nav-item nav-link mr-3" href="#contact-us">Contact us</a>
+      </div>
+    </div>
+  </nav>
+  <!--  Navigation End  -->
 
   <main>
-    <!-- ***** Welcome Area Start ***** -->
+    <!--  WELCOME START  -->
     <div class="welcome-area" id="welcome">
-      <!-- ***** Header Text Start ***** -->
+
       <div class="header-text">
         <div class="container">
           <div class="row">
-            <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
-              data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-              <h1>Simple App that we <em>CREATE</em></h1>
-              <p>
+            <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="text-center text-md-left">Simple App that we <em>CREATE</em></h1>
+              <p class="text-center text-md-left">
                 Lava <a href="#">HTML landing page</a> template is provided by
                 <a href="#">TemplateMo</a>. You can modify and use it for your
                 commercial websites for free of charge. This template is last
                 updated on 29 Oct 2019.
               </p>
-              <a href="#about" class="main-button-slider">KNOW US BETTER</a>
+              <div class="col-12 col-md-6 btn-block" ">
+                <button class=" main-button w-100" href="#about">
+                KNOW US BETTER
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- ***** Header Text End ***** -->
-    </div>
-    <!-- ***** Welcome Area End ***** -->
 
-    <!-- ***** Features Big Item Start ***** -->
+    </div>
+    <!--  WELCOME END  -->
+
+    <!--  FEATURES START  -->
     <section class="section" id="about">
       <div class="container">
         <div class="row">
@@ -74,9 +87,10 @@
                   Curabitur pulvinar vel odio sed sagittis. Nam maximus ex
                   diam, nec consectetur diam.
                 </p>
-                <a href="#testimonials" class="main-button">
-                  Read More
-                </a>
+
+                <button class="main-button">
+                  read more
+                </button>
               </div>
             </div>
           </div>
@@ -91,9 +105,10 @@
                   Curabitur pulvinar vel odio sed sagittis. Nam maximus ex
                   diam, nec consectetur diam.
                 </p>
-                <a href="#testimonials" class="main-button">
+
+                <button class="main-button">
                   Discover More
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -108,63 +123,84 @@
                   Curabitur pulvinar vel odio sed sagittis. Nam maximus ex
                   diam, nec consectetur diam.
                 </p>
-                <a href="#testimonials" class="main-button">
+
+                <button class="main-button">
                   More Detail
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ***** Features Big Item End ***** -->
+    <!--  FEATURES END  -->
 
     <div class="left-image-decor"></div>
 
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="promotion">
+    <!-- PROMOTION START  -->
+    <section class="section " id="promotion">
       <div class="container">
         <div class="row">
-          <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-            data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+          <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big" data-aos="fade-right">
             <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App" />
           </div>
           <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
             <ul>
               <li>
-                <img src="assets/images/about-icon-01.png" alt="" />
-                <div class="text">
-                  <h4>Vestibulum pulvinar rhoncus</h4>
-                  <p>
-                    Please do not redistribute this template ZIP file for a
-                    download purpose. You may
-                    <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a>
-                    us for additional licensing of our template or to get a
-                    PSD file.
-                  </p>
+                <div class="row justify-content-between" data-aos="fade-left">
+                  <div class="col-3 col-md-3 align-self-center w-auto"><img src="assets/images/about-icon-01.png"
+                      alt="" />
+                  </div>
+                  <div class="col-8 col-md-9">
+                    <div class="text">
+                      <h4>Vestibulum pulvinar rhoncus</h4>
+                      <p>
+                        Please do not redistribute this template ZIP file for a
+                        download purpose. You may
+                        <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a>
+                        us for our template or to get a PSD file.
+                      </p>
+                    </div>
+                  </div>
+
+
                 </div>
               </li>
               <li>
-                <img src="assets/images/about-icon-02.png" alt="" />
-                <div class="text">
-                  <h4>Sed blandit quam in velit</h4>
-                  <p>
-                    You can
-                    <a rel="nofollow" href="https://templatemo.com/tm-540-lava-landing-page">download Lava Template</a>
-                    from our website. Duis viverra, ipsum et scelerisque
-                    placerat, orci magna consequat ligula.
-                  </p>
+                <div class="row justify-content-between" data-aos="fade-left">
+                  <div class="col-3 col-md-3 align-self-center">
+                    <img src="assets/images/about-icon-02.png" alt="" />
+                  </div>
+                  <div class="col-8 col-md-9">
+                    <div class="text">
+                      <h4>Sed blandit quam in velit</h4>
+                      <p>
+                        You can
+                        <a rel="nofollow" href="https://templatemo.com/tm-540-lava-landing-page">download Lava
+                          Template</a>
+                        from our website. Duis viverra, ipsum et scelerisque
+                        placerat, orci magna consequat ligula.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+
               </li>
               <li>
-                <img src="assets/images/about-icon-03.png" alt="" />
-                <div class="text">
-                  <h4>Aenean faucibus venenatis</h4>
-                  <p>
-                    Phasellus in imperdiet felis, eget vestibulum nulla.
-                    Aliquam nec dui nec augue maximus porta. Curabitur
-                    tristique lacus.
-                  </p>
+                <div class="row justify-content-between" data-aos="fade-left">
+                  <div class="col-3 col-md-3 align-self-center">
+                    <img src="assets/images/about-icon-03.png" alt="" />
+                  </div>
+                  <div class="col-8 col-md-9">
+                    <div class="text">
+                      <h4>Aenean faucibus venenatis</h4>
+                      <p>
+                        Phasellus in imperdiet felis, eget vestibulum nulla.
+                        Aliquam nec dui nec augue maximus porta. Curabitur
+                        tristique lacus.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -172,15 +208,15 @@
         </div>
       </div>
     </section>
-    <!-- ***** Features Big Item End ***** -->
+    <!--  PROMOTION END  -->
 
     <div class="right-image-decor"></div>
     <!-- TESTIMOIAL START -->
     <section id="testimonial">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="center-head">
+          <div class="col-lg-12">
+            <div class="center-head text-center">
               <h2>What They Think</h2>
               <p>
                 Suspendisse vitae laoreet mauris. Fusce a nisi dapibus,
@@ -190,44 +226,70 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-between">
-            <div class="item p-2">
-              <div class="testi-owner">
-                <img style="width: 120px;" src="./assets/images/testimonial-author-1.png" alt="" />
-              </div>
-              <div class="testi-content text-white" style="width: 350px;">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <h4>nama saya nana</h4>
-                <p class="font-italic">
-                  “Nullam hendrerit, elit a semper pharetra, ipsum nibh
-                  tristique tortor, in tempus urna elit in mauris.”
-                </p>
-                <span>Besta CTO</span>
-              </div>
-            </div>
-            <div class="item p-2">
-              <div class="testi-owner">
-                <img style="width: 120px;" src="./assets/images/testimonial-author-1.png" alt="" />
-              </div>
-              <div class="testi-content text-white" style="width: 350px;">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <h4>nama saya nana</h4>
-                <p class="font-italic">
-                  “Nullam hendrerit, elit a semper pharetra, ipsum nibh
-                  tristique tortor, in tempus urna elit in mauris.”
-                </p>
-                <span>Besta CTO</span>
+          <div class="owl-carousel">
+            <div class="m-5" data-aos="fade-down">
+              <div class="item p-2">
+                <div class="testi-owner">
+                  <img style="width: 120px;" src="./assets/images/testimonial-author-1.png" alt="" />
+                </div>
+                <div class="testi-content text-white" style="width: 350px;">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <h4>nama saya nana</h4>
+                  <p class="font-italic">
+                    “Nullam hendrerit, elit a semper pharetra, ipsum nibh
+                    tristique tortor, in tempus urna elit in mauris.”
+                  </p>
+                  <span>Besta CTO</span>
+                </div>
               </div>
             </div>
+            <div class="m-5" data-aos="fade-down">
+              <div class="item p-2">
+                <div class="testi-owner">
+                  <img style="width: 120px;" src="./assets/images/testimonial-author-1.png" alt="" />
+                </div>
+                <div class="testi-content text-white" style="width: 350px;">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <h4>nama saya nana</h4>
+                  <p class="font-italic">
+                    “Nullam hendrerit, elit a semper pharetra, ipsum nibh
+                    tristique tortor, in tempus urna elit in mauris.”
+                  </p>
+                  <span>Besta CTO</span>
+                </div>
+              </div>
+            </div>
+            <div class="m-5" data-aos="fade-down">
+              <div class="item p-2">
+                <div class="testi-owner">
+                  <img style="width: 120px;" src="./assets/images/testimonial-author-1.png" alt="" />
+                </div>
+                <div class="testi-content text-white" style="width: 350px;">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <h4>nama saya nana</h4>
+                  <p class="font-italic">
+                    “Nullam hendrerit, elit a semper pharetra, ipsum nibh
+                    tristique tortor, in tempus urna elit in mauris.”
+                  </p>
+                  <span>Besta CTO</span>
+                </div>
+              </div>
+            </div>
+
           </div>
+
         </div>
       </div>
     </section>
@@ -322,6 +384,7 @@
   </main>
 
   <!-- Optional JavaScript -->
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -334,11 +397,13 @@
   </script>
   <script src="assets/js/main.js"></script>
   <!-- PLUGIN -->
-  <script src="./assets/js/scrollreveal.min.js"></script>
-  <script src="./assets/js/owl-carousel.js"></script>
-  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./assets/js/jquery-2.1.0.min.js"></script>
-  <script src="./assets/js/jquery.counterup.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+
 </body>
 
 </html>

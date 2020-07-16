@@ -1,0 +1,23 @@
+PERSIAPAN techtalk 
+
+punya account 
+github
+netlify
+figma 
+
+install
+visual studio code
+extension beautify
+extension bootstrap 4, font awesome 4, font awesome 5
+extension HTML snippets
+extension IntelliSense for CSS class names in HTML
+extension live server
+extension prettier-code formatter
+
+
+
+dokumentasi css
+https://devdocs.io/css/
+
+deploy to netlify
+https://www.netlify.com/blog/2016/10/27/a-step-by-step-guide-deploying-a-static-site-or-single-page-app/
